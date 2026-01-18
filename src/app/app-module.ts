@@ -10,6 +10,9 @@ import { Listproduct1 } from './listproduct1/listproduct1';
 import { Listproduct3 } from './listproduct3/listproduct3';
 import { Customer18 } from './customer18/customer18';
 
+import { ListCustomer } from './list-customer/list-customer';
+import { Product14 } from './product14/product14';
+
 @NgModule({
   declarations: [
     App,
@@ -18,7 +21,10 @@ import { Customer18 } from './customer18/customer18';
     Listproduct1,
     
     Listproduct3,
-    Customer18
+    Customer18,
+
+    ListCustomer,
+    Product14
   ],
   imports: [
     BrowserModule,
