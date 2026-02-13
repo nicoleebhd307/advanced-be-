@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ProductService } from '../product';
+import { ProductService13 } from '../exercise13';
 
 @Component({
-  selector: 'app-service-product-image-event-detail',
+  selector: 'app-exercise13-detail',
   standalone: false,
-  templateUrl: './service-product-image-event-detail.html',
-  styleUrl: './service-product-image-event-detail.css',
+  templateUrl: './exercise13-detail.html',
+  styleUrls: ['./exercise13-detail.css']
 })
-export class ServiceProductImageEventDetail {
+export class Exercise13Detail {
   selectedProduct: any
-  constructor(private activateRoute: ActivatedRoute, private _fs: ProductService,
+  constructor(private activateRoute: ActivatedRoute, private _fs: ProductService13,
     private router: Router) {
     activateRoute.paramMap.subscribe(
       (param) => {
@@ -22,6 +22,8 @@ export class ServiceProductImageEventDetail {
     )
   }
   goBack() {
-    this.router.navigate(['service-product-image-event'])
+    this.router.navigate(['ex-13'])
   }
+
+
 }

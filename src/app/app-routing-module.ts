@@ -6,9 +6,11 @@ import { Listproduct3 } from './listproduct3/listproduct3';
 import { Listproduct2 } from './listproduct2/listproduct2';
 import { Notfound } from './notfound/notfound';
 import { Productdetail } from './productdetail/productdetail';
-import { ProductimageEx13 } from './productimage-ex13';
-import { ServiceProductImageEvent } from './service-product-image-event/service-product-image-event';
-import { ServiceProductImageEventDetail } from './service-product-image-event-detail/service-product-image-event-detail';
+import { ServiceProductImageEventComponent } from './exercise13/exercise13';
+import { Exercise13Detail } from './exercise13-detail/exercise13-detail';
+import { Exercise19 } from './exercise19/exercise19';
+import { Product14 } from './product14/product14';
+import { Customer18 } from './customer18/customer18';
 
 const routes: Routes = [
   { path: 'gioi-thieu', component: About },
@@ -16,30 +18,21 @@ const routes: Routes = [
   { path: 'san-pham-2', component: Listproduct2 },
   { path: 'san-pham-3', component: Listproduct3 },
   { path: 'san-pham-2/:id', component: Productdetail }, // route with parameter
+  // exercise 13 routes
+  { path: 'ex-13', component: ServiceProductImageEventComponent },
+  { path: 'ex-13/:id', component: Exercise13Detail },
+  { path: 'ex-19', component: Exercise19 },
+  { path: 'ex-14', component: Product14 },
+  { path: 'ex-18', component: Customer18 },
+
   { path: '**', component: Notfound },  // wildcard route for a 404 page
 
-  // Exercise 13 
-  {
-    path: 'app-productimg-ex13',
-    component: ProductimageEx13
-  },
-  {
-    path: 'app-productimg-ex13/:id',
-    component: ProductimageEx13 
-  },
-  // Service Product Image Event
-  {
-    path: 'service-product-image-event',
-    component: ServiceProductImageEvent
-  },
-  {
-    path: 'service-product-image-event/:id',
-    component: ServiceProductImageEventDetail
-  },
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule], 
+
 })
 export class AppRoutingModule { }

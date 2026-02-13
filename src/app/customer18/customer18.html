@@ -1,8 +1,8 @@
-<div class="receipt-container">
-    <h1>=== CUSTOMER LIST ===</h1>
-
-    <div *ngFor="let customerType of customerTypes" class="customer-type-section">
-<h2>{{ customerType.CustomterTypeName }} (ID: {{ customerType.CustomerTypeId }})</h2>        <table>
+<div class="receipt-container"  *ngFor="let customerType of customerTypes">
+    <h1>CUSTOMER LIST</h1>
+    <div class="customer-type-section">
+        <h2>{{ customerType.CustomterTypeName }} (ID: {{ customerType.CustomerTypeId }})</h2>
+        <table>
             <thead>
                 <tr>
                     <th>Image</th>
