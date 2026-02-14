@@ -1,4 +1,5 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from "@angular/core";
+import { MatIconModule } from "@angular/material/icon";
 import { About } from "./about/about";
 import { Contact } from "./contact/contact";
 import { Listproduct1 } from "./listproduct1/listproduct1";
@@ -16,12 +17,14 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing-module";
 import { HttpClientModule } from "@angular/common/http";
 import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 import { App } from "./app";
 import { Exercise19 } from './exercise19/exercise19';
 import { DongABankComponent } from './dongabank/dongabank';
 import { FakeProductComponent } from './fake-product/fake-product';
 import { CoinComponent } from './coin/coin';
 import { BooksComponent } from './books/books';
+import { Books50Component } from "./exercise50/books/books";
 @NgModule({
   declarations: [
     App,
@@ -43,13 +46,15 @@ import { BooksComponent } from './books/books';
     FakeProductComponent,
     CoinComponent,
     BooksComponent,
+    Books50Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    //FormsModule,
-    CommonModule
+    FormsModule,
+    CommonModule,
+    MatIconModule
   ],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App]  

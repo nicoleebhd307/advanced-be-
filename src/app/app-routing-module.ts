@@ -15,6 +15,7 @@ import { DongABankComponent } from './dongabank/dongabank';
 import { FakeProductComponent } from './fake-product/fake-product';
 import { CoinComponent } from './coin/coin';
 import { BooksComponent } from './books/books';
+import { Books50Component } from './exercise50/books/books';
 
 const routes: Routes = [
   { path: 'gioi-thieu', component: About },
@@ -31,7 +32,7 @@ const routes: Routes = [
   { path: 'ex-26', component: FakeProductComponent },
   { path: 'ex-28', component: CoinComponent },
   { path: 'ex-39', component: BooksComponent },
-
+  { path: 'ex-50', component: Books50Component }, // lazy loading route
   { path: '**', component: Notfound },  // wildcard route for a 404 page
 
 
