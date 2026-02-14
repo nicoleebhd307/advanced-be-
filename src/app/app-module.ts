@@ -21,7 +21,7 @@ import { Exercise19 } from './exercise19/exercise19';
 import { DongABankComponent } from './dongabank/dongabank';
 import { FakeProductComponent } from './fake-product/fake-product';
 import { CoinComponent } from './coin/coin';
-
+import { BooksComponent } from './books/books';
 @NgModule({
   declarations: [
     App,
@@ -42,6 +42,7 @@ import { CoinComponent } from './coin/coin';
     DongABankComponent,
     FakeProductComponent,
     CoinComponent,
+    BooksComponent,
   ],
   imports: [
     BrowserModule,
