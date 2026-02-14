@@ -11,6 +11,9 @@ import { Exercise13Detail } from './exercise13-detail/exercise13-detail';
 import { Exercise19 } from './exercise19/exercise19';
 import { Product14 } from './product14/product14';
 import { Customer18 } from './customer18/customer18';
+import { DongABankComponent } from './dongabank/dongabank';
+import { FakeProductComponent } from './fake-product/fake-product';
+import { CoinComponent } from './coin/coin';
 
 const routes: Routes = [
   { path: 'gioi-thieu', component: About },
@@ -24,7 +27,8 @@ const routes: Routes = [
   { path: 'ex-19', component: Exercise19 },
   { path: 'ex-14', component: Product14 },
   { path: 'ex-18', component: Customer18 },
-
+  { path: 'ex-26', component: FakeProductComponent },
+  { path: 'ex-28', component: CoinComponent },
   { path: '**', component: Notfound },  // wildcard route for a 404 page
 
 

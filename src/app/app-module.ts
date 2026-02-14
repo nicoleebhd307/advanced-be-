@@ -18,6 +18,9 @@ import { HttpClientModule } from "@angular/common/http";
 import { CommonModule } from "@angular/common";
 import { App } from "./app";
 import { Exercise19 } from './exercise19/exercise19';
+import { DongABankComponent } from './dongabank/dongabank';
+import { FakeProductComponent } from './fake-product/fake-product';
+import { CoinComponent } from './coin/coin';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { Exercise19 } from './exercise19/exercise19';
     Exercise13Detail,
     ServiceProductImageEventComponent,
     Exercise19,
+    DongABankComponent,
+    FakeProductComponent,
+    CoinComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +51,6 @@ import { Exercise19 } from './exercise19/exercise19';
     CommonModule
   ],
   providers: [provideBrowserGlobalErrorListeners()],
-  bootstrap: [App]   // ✅ đúng
+  bootstrap: [App]  
 })
 export class AppModule { }
